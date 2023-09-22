@@ -247,7 +247,7 @@ vmcluster:
             target:
               type: Utilization
               averageUtilization: 70
-  
+
   ingress:
     storage:
       enabled: true

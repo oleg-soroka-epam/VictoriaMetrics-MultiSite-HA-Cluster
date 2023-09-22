@@ -163,7 +163,7 @@ vmcluster:
         limits:
           cpu: "1.5"
           memory: 2000Mi
-        
+
 
     vmselect:
       image:
@@ -183,7 +183,7 @@ vmcluster:
         requests:
           cpu: "0.5"
           memory: "500Mi"
-      
+
       # ##Running on Spot nodes ? if yes, uncomment it and modify to your relevant labels/tolerations
       #   nodeSelector:
       #     cloud.google.com/gke-spot: "true"
@@ -199,7 +199,7 @@ vmcluster:
         enabled: true
         # -- Maximum replicas for HPA to use to to scale the vmselect component
         maxReplicas: 10
-          # -- Minimum replicas for HPA to use to scale the vmselect component
+        # -- Minimum replicas for HPA to use to scale the vmselect component
         minReplicas: 3
         # -- Metric for HPA to use to scale the vmselect component
         metrics:
@@ -221,7 +221,7 @@ vmcluster:
         requests:
           cpu: "0.5"
           memory: "500Mi"
-      
+
       # ##Running on Spot nodes ? if yes, uncomment it and modify to your relevant labels/tolerations
       #   nodeSelector:
       #     cloud.google.com/gke-spot: "true"
